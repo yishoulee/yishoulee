@@ -1,23 +1,31 @@
-### Hi! I'm Yi-Shou (Ian) Lee
+# Yi-Shou (Ian) Lee
 
-Linux OS engineer based in Taiwan, focused on Linux enablement, hardware bring-up, validation, and systems integration.
+Linux OS Engineer at Lenovo Infrastructure Solutions Group, working on enterprise server bring-up, RHEL enablement, platform validation, and hardware-software integration.
 
-## Focus
+## Enterprise Linux and Server Platforms
 
-- Linux OS enablement, board bring-up, validation, and debugging
-- FPGA / SoC platforms, especially Xilinx Zynq and AMD Versal
-- C/C++ and Python for tooling, testing, and performance-oriented components
-- Low-latency data paths, order-book engines, and hardware/software integration
+- Lenovo ThinkSystem server integration across CPU, memory, storage, NIC, power, UEFI, XCC/BMC, POST, and OS boot
+- RHEL validation across boot health, power management, TPM, RAS, NVMe/RAID, SR-IOV, virtualization, and accelerator subsystems
+- KVM/QEMU/libvirt validation, including AMD SME, SEV, and SEV-ES
+- Linux RAS memory validation using ACPI EINJ, MCA handling, PFA page retirement, and memory mirroring
+- Platform defect reproduction, kernel and system-log analysis, and repeatable evidence collection
+- Test procedures, scripts, execution trackers, and validation notes for cross-team engineering work
 
-## Current direction
+## FPGA and Hardware-Software Integration
 
-- Building practical Linux + embedded systems depth
-- Turning hardware experiments into reproducible logs, scripts, and measurable outputs
-- Using AI-assisted engineering workflows while keeping results runnable, testable, and documented
+- AX7015B / Zynq-7015 board bring-up and system integration
+- Restored stable 1 Gbps RGMII Ethernet reception using Vivado ILA, IDDR, and IDELAYE2 debugging
+- Integrated Xilinx XDMA PCIe Gen2 with Zynq PS DDR3 for host-to-card and card-to-host transfers
+- Patched the Linux XDMA driver for a custom PCIe device ID and restored working `/dev/xdma*` interfaces
+- Automated FPGA build, board programming, PS initialization, packet testing, and ILA capture using Tcl, Make, XSCT, Python, and Scapy
+- Validated sustained PCIe DMA throughput above 800 MB/s
+- Measured packet-processing and AXI-Lite latency in hardware
 
-## Projects
+## Tools and Technologies
 
-- AX7015B FPGA market-data → order-book pipeline
-- Sparse matrix-vector performance benchmark (C++ / OpenMP)
-- Small backtesting and data-processing utilities (Python)
-- Linux-oriented experiments on FPGA / SoC development boards
+**Operating systems:** Linux, RHEL, Embedded Linux  
+**Virtualization:** KVM, QEMU, libvirt  
+**Programming:** C, C++, Python, Bash, Tcl  
+**Build and automation:** Make, Git, XSCT  
+**FPGA:** AMD/Xilinx Zynq-7000, Vivado, Xsim, ILA, VIO  
+**Interfaces and subsystems:** PCIe, XDMA, Ethernet, RGMII, AXI4, AXI4-Lite, DDR, NVMe, SR-IOV, RAS
