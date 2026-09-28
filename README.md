@@ -16,8 +16,8 @@ Technology-sector professional focused on **technical program coordination, qual
 ### [FPGA / Linux Systems Integration & Validation](https://github.com/yishoulee/fpga-inference-portfolio)
 Progressive Zynq-7000 hardware/software integration work covering RGMII Ethernet, PCIe XDMA, AXI/BRAM, Linux, build automation, and hardware validation.
 
-- Stable **1 Gbps RGMII receive path**
-- Measured **841 MB/s H2C** and **820 MB/s C2H** PCIe XDMA throughput
+- Physical RGMII receive-path bring-up using packet injection and Vivado ILA
+- Project notes record a host-side **841 MB/s H2C** PCIe XDMA benchmark
 - Tcl/Make build automation, ILA/VIO debugging, Linux integration, and structured validation evidence
 
 ### [Alpha Foundry](https://github.com/yishoulee/alpha-foundry)
