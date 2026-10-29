@@ -23,8 +23,8 @@ Progressive Zynq-7000 hardware/software integration work covering RGMII Ethernet
 ### [Alpha Foundry](https://github.com/yishoulee/alpha-foundry)
 Modular Python backtesting framework emphasizing clean separation of concerns, testability, and repeatable research workflows.
 
-- Vectorized research path above **52,000 bars/s**
-- Unit/integration-test structure and reusable data/strategy components
+- Vectorized Pandas/NumPy signal generation with sequential portfolio accounting
+- Unit tests and reusable data/strategy components
 
 ### [spMV Performance Benchmark](https://github.com/yishoulee/spMV-Performance-Benchmark)
 C++/OpenMP sparse-matrix benchmark used to characterize CPU scaling and memory-bound performance behavior.
